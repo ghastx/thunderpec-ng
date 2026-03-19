@@ -5,7 +5,7 @@
   "description": "__MSG_extensionDescription__",
   "default_locale": "it",
   "author": "ThunderPEC-ng contributors",
-  "homepage_url": "https://github.com/nicogbr/thunderpec-ng",
+  "homepage_url": "https://github.com/ghastx/thunderpec-ng",
   "browser_specific_settings": {
     "gecko": {
       "id": "thunderpec-ng@gmail.com",
