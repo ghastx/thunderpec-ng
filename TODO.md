@@ -1,4 +1,4 @@
-# ThunderPEC — Piano di migrazione
+# ThunderPEC-ng — Piano di migrazione
 
 ## Fase 0 — Preparazione repository ✅
 - [x] Caricare codice legacy su branch `legacy`
@@ -7,10 +7,10 @@
 - [x] Documentazione decisioni (`docs/project-notes.md`)
 
 ## Fase 1 — Scheletro MailExtension
-- [ ] Creare `manifest.json` (Manifest V3, target TB 140+)
-- [ ] Background script (Event Page)
-- [ ] Struttura cartelle (`_locales/`, `experiments/`, `src/`, `ui/`)
-- [ ] Menu base "ThunderPEC" (vuoto ma visibile)
+- [x] Creare `manifest.json` (Manifest V3, target TB 128+)
+- [x] Background script (Event Page)
+- [x] Struttura cartelle (`_locales/`, `experiments/`, `src/`, `ui/`)
+- [x] Menu base "ThunderPEC-ng" (vuoto ma visibile)
 - [ ] Testare installazione su Thunderbird
 
 ## Fase 2 — Core PEC (logica riutilizzabile)

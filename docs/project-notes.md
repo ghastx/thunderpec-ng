@@ -1,4 +1,4 @@
-# ThunderPEC — Note di progetto e decisioni
+# ThunderPEC-ng — Note di progetto e decisioni
 
 ## Analisi del codice legacy (v1.9.1)
 
@@ -71,3 +71,23 @@ Tempo stimato: **3–6 mesi** per uno sviluppatore part-time, per arrivare a una
 - [API WebExtension Thunderbird (MV3)](https://webextension-api.thunderbird.net/en/mv3/)
 - [Repo Experiments ufficiale](https://github.com/thunderbird/webext-experiments)
 - [Repo webext-support](https://github.com/thunderbird/webext-support)
+
+## Decisioni Fase 1 — Scheletro MailExtension
+
+### Manifest V3
+Scelto `manifest_version: 3` con `strict_min_version: "128.0"` (Thunderbird ESR). Il manifest usa `__MSG_extensionName__` per il nome localizzato.
+
+### ID estensione
+Nuovo ID `thunderpec-ng@gmail.com`, distinto dal legacy `thunderpec@gmail.com` per evitare conflitti.
+
+### Background script
+Event Page non persistente (`src/background.js`). Registra un menu placeholder nel menu Strumenti di Thunderbird tramite `browser.menus` API con contesto `tools_menu`.
+
+### Permessi
+- `storage` — per persistenza dati (Fase 3)
+- `messagesRead` — per accesso ai messaggi PEC (Fase 4)
+- `accountsRead` — per gestione account PEC (Fase 4)
+- `menus` — per menu nel menu Strumenti
+
+### Localizzazione
+Default locale: italiano (`it`). Supporto inglese (`en`) presente. Usa il formato WebExtension `_locales/<lang>/messages.json`.

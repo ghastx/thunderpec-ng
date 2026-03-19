@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "version": "2.0.0",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "it",
+  "author": "ThunderPEC-ng contributors",
+  "homepage_url": "https://github.com/nicogbr/thunderpec-ng",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "thunderpec-ng@gmail.com",
+      "strict_min_version": "128.0"
+    }
+  },
+  "background": {
+    "scripts": ["src/background.js"],
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "messagesRead",
+    "accountsRead",
+    "menus"
+  ],
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  }
+}

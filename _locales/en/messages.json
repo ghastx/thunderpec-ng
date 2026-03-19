@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "ThunderPEC-ng",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Simplified management of Italian Certified Email (PEC) for Thunderbird",
+    "description": "Extension description"
+  }
+}
